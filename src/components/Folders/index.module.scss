@@ -1,0 +1,55 @@
+@import "src/shared/assets/styles";
+
+.wrapper {
+  min-width: 400px;
+  width: 400px;
+  height: 100%;
+  padding: 20px 30px;
+
+  background: $bg-main;
+  border-radius: 10px;
+  box-shadow: 5px 5px 20px 0 rgba(#ccc, 0.1);
+}
+
+.list {
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 16px;
+
+  list-style-type: none;
+
+  li {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    gap: 12px;
+
+    font: $p-medium;
+    line-height: 16px;
+    color: $main-dark;
+
+    cursor: pointer;
+
+    svg {
+      width: 20px;
+      height: 20px;
+
+      path {
+        fill: $main-dark;
+      }
+    }
+
+    &:hover {
+      color: $main-light;
+
+      path {
+        fill: $main-light;
+      }
+    }
+  }
+}
